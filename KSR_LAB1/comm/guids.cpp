@@ -1,0 +1,9 @@
+#include<windows.h>
+
+extern "C" {
+	
+	//Tutaj wpisz wygenerowany wczeœniej identyfikator CLSID:
+	
+	CLSID CLSID_Klasa = { 0x4d91829d, 0x7475, 0x46ea, { 0x92, 0x29, 0x24, 0x33, 0x54, 0x31, 0x4e, 0x89 } };
+	
+}

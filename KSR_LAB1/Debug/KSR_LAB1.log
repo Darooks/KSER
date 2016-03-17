@@ -1,0 +1,42 @@
+﻿Kompilacja rozpoczęła się 2016-03-10 17:13:02.
+     1>Projekt „C:\Users\pppp\Desktop\KSR_LAB1\KSR_LAB1.vcxproj” w węźle 2 (elementy docelowe: rebuild).
+     1>_PrepareForClean:
+         Usuwanie pliku „Debug\KSR_LAB1.lastbuildstate”.
+       InitializeBuildStatus:
+         Trwa tworzenie „Debug\KSR_LAB1.unsuccessfulbuild”, ponieważ określono "AlwaysCreate".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D KSR_LAB1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt com\dllmain.cpp com\factory.cpp com\guids.cpp com\klasa.cpp
+         klasa.cpp
+         guids.cpp
+         factory.cpp
+         dllmain.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\KSR_LAB1.dll.embed.manifest.res" Debug\KSR_LAB1_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"C:\Users\pppp\Desktop\KSR_LAB1\com\klasa.def" /MANIFEST /ManifestFile:"Debug\KSR_LAB1.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.lib" /MACHINE:X86 /DLL Debug\KSR_LAB1.dll.embed.manifest.res
+         Debug\dllmain.obj
+         Debug\factory.obj
+         Debug\guids.obj
+         Debug\klasa.obj
+            Creating library C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.lib and object C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.exp
+       Manifest:
+         Usuwanie pliku „Debug\KSR_LAB1.dll.embed.manifest”.
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\KSR_LAB1.dll.embed.manifest" /manifest Debug\KSR_LAB1.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\KSR_LAB1.dll.embed.manifest.res" Debug\KSR_LAB1_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"C:\Users\pppp\Desktop\KSR_LAB1\com\klasa.def" /MANIFEST /ManifestFile:"Debug\KSR_LAB1.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.lib" /MACHINE:X86 /DLL Debug\KSR_LAB1.dll.embed.manifest.res
+         Debug\dllmain.obj
+         Debug\factory.obj
+         Debug\guids.obj
+         Debug\klasa.obj
+            Creating library C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.lib and object C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.exp
+         KSR_LAB1.vcxproj -> C:\Users\pppp\Desktop\KSR_LAB1\Debug\KSR_LAB1.dll
+       FinalizeBuildStatus:
+         Usuwanie pliku „Debug\KSR_LAB1.unsuccessfulbuild”.
+         Modyfikowanie „Debug\KSR_LAB1.lastbuildstate”.
+     1>Kompilowanie projektu „C:\Users\pppp\Desktop\KSR_LAB1\KSR_LAB1.vcxproj” wykonane (elementy docelowe: rebuild).
+
+Kompilacja powiodła się.
+
+Czas, który upłynął: 00:00:04.63

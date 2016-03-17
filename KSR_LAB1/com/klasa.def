@@ -1,0 +1,7 @@
+LIBRARY KSR_LAB1.dll
+
+EXPORTS
+	DllCanUnloadNow	PRIVATE
+	DllGetClassObject PRIVATE  
+
+

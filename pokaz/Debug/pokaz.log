@@ -1,0 +1,34 @@
+﻿Kompilacja rozpoczęła się 2016-03-10 18:00:33.
+     1>Projekt „C:\Users\pppp\Desktop\pokaz\pokaz.vcxproj” w węźle 2 (elementy docelowe: rebuild).
+     1>_PrepareForClean:
+         Usuwanie pliku „Debug\pokaz.lastbuildstate”.
+       InitializeBuildStatus:
+         Trwa tworzenie „Debug\pokaz.unsuccessfulbuild”, ponieważ określono "AlwaysCreate".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\KSR_LAB1\com\client.cpp ..\KSR_LAB1\com\guids.cpp
+         guids.cpp
+         client.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\pokaz.exe.embed.manifest.res" Debug\pokaz_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\pokaz.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\pokaz.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\pokaz.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\pokaz.lib" /MACHINE:X86 Debug\pokaz.exe.embed.manifest.res
+         Debug\client.obj
+         Debug\guids.obj
+       Manifest:
+         Usuwanie pliku „Debug\pokaz.exe.embed.manifest”.
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\pokaz.exe.embed.manifest" /manifest Debug\pokaz.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\pokaz.exe.embed.manifest.res" Debug\pokaz_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\pokaz.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\pokaz.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\pokaz.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\pokaz.lib" /MACHINE:X86 Debug\pokaz.exe.embed.manifest.res
+         Debug\client.obj
+         Debug\guids.obj
+         pokaz.vcxproj -> C:\Users\pppp\Desktop\KSR_LAB1\Debug\pokaz.exe
+       FinalizeBuildStatus:
+         Usuwanie pliku „Debug\pokaz.unsuccessfulbuild”.
+         Modyfikowanie „Debug\pokaz.lastbuildstate”.
+     1>Kompilowanie projektu „C:\Users\pppp\Desktop\pokaz\pokaz.vcxproj” wykonane (elementy docelowe: rebuild).
+
+Kompilacja powiodła się.
+
+Czas, który upłynął: 00:00:03.71

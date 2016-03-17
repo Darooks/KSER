@@ -1,0 +1,9 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{4D91829D-7475-46EA-9229-243354314E89}]
+@="Klasa"
+
+[HKEY_CLASSES_ROOT\CLSID\{4D91829D-7475-46EA-9229-243354314E89}\LocalServer32]
+@="Dysk:\\Bezwzglêdna\\œcie¿ka\\do\\aplikacji\\exeserv.exe"
+"ServerExecutable"="C:\\comy\\projekt\\Debug\\exeserv.exe"
+

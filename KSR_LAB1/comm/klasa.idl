@@ -1,0 +1,12 @@
+import "oaidl.idl";
+[
+    object, uuid(17C11AFB-8892-4E9E-95C7-DF73A9D54D24)
+	//{ 0xe8ae623d, 0xb981, 0x4188, { 0x81, 0x8a, 0x9f, 0x9b, 0x2d, 0xd3, 0xea, 0x38 } };// {E8AE623D-B981-4188-818A-9F9B2DD3EA38}
+]
+interface IKlasa : IUnknown
+{
+	HRESULT Push([in] int val);
+	HRESULT PopEx([out] int *val);
+	// Pop-a midl nie bêdzie chcia³ skompilowaæ
+	// int Pop();
+};

@@ -1,0 +1,115 @@
+#include<windows.h>
+#include"klasa.h"
+#include"factory.h"
+
+volatile int usageCount = 0;
+
+
+STDAPI DllGetClassObject(REFCLSID cls, REFIID iid, void **rv) {
+	KlasaFactory *f;
+	if(cls != CLSID_Klasa) { return CLASS_E_CLASSNOTAVAILABLE; };
+	if(iid == IID_IClassFactory) {
+		f = new KlasaFactory();
+		f->AddRef();
+		*rv = f;
+		return S_OK;
+		};
+	return CLASS_E_CLASSNOTAVAILABLE;
+};
+
+static int SetRegKey(HKEY root, const wchar_t *keyname, 
+					 const wchar_t *subname, const wchar_t *value) {
+	int i, len;
+	HKEY key;
+	DWORD rv;
+	i = RegCreateKeyEx(root, keyname, 0, L"", REG_OPTION_NON_VOLATILE, 
+		KEY_WRITE,
+NULL, &key, &rv);
+	if(i != 0) return i;
+	len = lstrlen(value) + 1;
+	i = RegSetValueEx(key, subname, 0, REG_SZ, (const BYTE *)value, 
+		len*sizeof(wchar_t));
+	RegCloseKey(key);
+	return i;
+};
+
+
+HRESULT DllRegisterServer() {
+	wchar_t clsid[128];
+	wchar_t key[1024];
+	StringFromGUID2(CLSID_Klasa, clsid, 128);
+	lstrcpy(key, L"CLSID\\");
+	lstrcat(key, clsid);
+	SetRegKey(HKEY_CLASSES_ROOT, key, NULL, L"Klasa");
+	lstrcat(key, L"\\InProcServer32");
+	SetRegKey(HKEY_CLASSES_ROOT, key, NULL, L"PELNA\\SCIEZKA\\DO\\\
+		DLL-KI\\NAZWA_DLL-KI.dll");
+	SetRegKey(HKEY_CLASSES_ROOT, key, L"ThreadingModel", L"Both");
+	return S_OK;
+};
+
+HRESULT DllUnregisterServer() {
+	wchar_t clsid[128];
+	wchar_t key[1024];
+	StringFromGUID2(CLSID_Klasa, clsid, 128);
+	lstrcpy(key, L"CLSID\\");
+	lstrcat(key, clsid);
+	lstrcat(key, L"\\InProcServer32\\ThreadingModel");
+	RegDeleteKey(HKEY_CLASSES_ROOT, key);
+	lstrcpy(key, L"CLSID\\");
+	lstrcat(key, clsid);
+	lstrcat(key, L"\\InProcServer32");
+	RegDeleteKey(HKEY_CLASSES_ROOT, key);
+	lstrcpy(key, L"CLSID\\");
+	lstrcat(key, clsid);
+	RegDeleteKey(HKEY_CLASSES_ROOT, key);
+	return S_OK;
+};
+
+
+HRESULT DllRegisterServer() {
+	wchar_t clsid[128];
+	wchar_t key[1024];
+	StringFromGUID2(CLSID_Klasa, clsid, 128);
+	lstrcpy(key, L"CLSID\\");
+	lstrcat(key, clsid);
+	SetRegKey(HKEY_CLASSES_ROOT, key, NULL, L"Klasa");
+	lstrcat(key, L"\\InProcServer32");
+	SetRegKey(HKEY_CLASSES_ROOT, key, NULL, L"C:\\Studia\\_Asystentura\\4.sem_letni_2011-2012\\KSR\\1.COM\\klasa\\Debug\\klasa.dll");
+	SetRegKey(HKEY_CLASSES_ROOT, key, L"ThreadingModel", L"Both");
+	return S_OK;
+};
+
+HRESULT DllUnregisterServer() {
+	wchar_t clsid[128];
+	wchar_t key[1024];
+	StringFromGUID2(CLSID_Klasa, clsid, 128);
+	lstrcpy(key, L"CLSID\\");
+	lstrcat(key, clsid);
+	lstrcat(key, L"\\InProcServer32\\ThreadingModel");
+	RegDeleteKey(HKEY_CLASSES_ROOT, key);
+	lstrcpy(key, L"CLSID\\");
+	lstrcat(key, clsid);
+	lstrcat(key, L"\\InProcServer32");
+	RegDeleteKey(HKEY_CLASSES_ROOT, key);
+	lstrcpy(key, L"CLSID\\");
+	lstrcat(key, clsid);
+	RegDeleteKey(HKEY_CLASSES_ROOT, key);
+	return S_OK;
+};
+
+STDAPI DllCanUnloadNow() {
+	return usageCount > 0 ? FALSE : TRUE;
+	};
+
+
+BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
+	switch(ul_reason_for_call) {
+		case DLL_PROCESS_ATTACH:
+		case DLL_THREAD_ATTACH:
+		case DLL_THREAD_DETACH:
+		case DLL_PROCESS_DETACH:
+			break;
+		}
+	return TRUE;
+};

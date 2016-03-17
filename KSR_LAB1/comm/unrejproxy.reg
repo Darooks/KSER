@@ -1,0 +1,5 @@
+REGEDIT4
+
+[-HKEY_CLASSES_ROOT\CLSID\{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}\AppID]
+[-HKEY_CLASSES_ROOT\AppID\{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}\DllSurrogate]
+[-HKEY_CLASSES_ROOT\AppID\{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}]

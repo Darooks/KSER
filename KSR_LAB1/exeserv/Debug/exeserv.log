@@ -1,0 +1,52 @@
+﻿Kompilacja rozpoczęła się 2016-03-10 18:28:05.
+     1>Projekt „C:\Users\pppp\Desktop\KSR_LAB1\exeserv\exeserv.vcxproj” w węźle 2 (elementy docelowe: rebuild).
+     1>_PrepareForClean:
+         Usuwanie pliku „Debug\exeserv.lastbuildstate”.
+       InitializeBuildStatus:
+         Trwa tworzenie „Debug\exeserv.unsuccessfulbuild”, ponieważ określono "AlwaysCreate".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\comm\exeserv.cpp ..\com\factory.cpp ..\com\guids.cpp ..\com\klasa.cpp
+         klasa.cpp
+         guids.cpp
+         factory.cpp
+         exeserv.cpp
+     1>c:\users\pppp\desktop\ksr_lab1\comm\exeserv.cpp(21): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(246) : see declaration of 'stricmp'
+     1>c:\users\pppp\desktop\ksr_lab1\comm\exeserv.cpp(23): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(246) : see declaration of 'stricmp'
+     1>c:\users\pppp\desktop\ksr_lab1\comm\exeserv.cpp(25): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(246) : see declaration of 'stricmp'
+     1>c:\users\pppp\desktop\ksr_lab1\comm\exeserv.cpp(31): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(130) : see declaration of 'kbhit'
+     1>c:\users\pppp\desktop\ksr_lab1\comm\exeserv.cpp(31): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>c:\users\pppp\desktop\ksr_lab1\comm\exeserv.cpp(33): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(130) : see declaration of 'kbhit'
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\exeserv.exe.embed.manifest.res" Debug\exeserv_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\exeserv.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\exeserv.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\exeserv.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\exeserv.lib" /MACHINE:X86 Debug\exeserv.exe.embed.manifest.res
+         Debug\exeserv.obj
+         Debug\factory.obj
+         Debug\guids.obj
+         Debug\klasa.obj
+       Manifest:
+         Usuwanie pliku „Debug\exeserv.exe.embed.manifest”.
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\exeserv.exe.embed.manifest" /manifest Debug\exeserv.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\exeserv.exe.embed.manifest.res" Debug\exeserv_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\exeserv.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\exeserv.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\exeserv.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\exeserv.lib" /MACHINE:X86 Debug\exeserv.exe.embed.manifest.res
+         Debug\exeserv.obj
+         Debug\factory.obj
+         Debug\guids.obj
+         Debug\klasa.obj
+         exeserv.vcxproj -> C:\Users\pppp\Desktop\KSR_LAB1\Debug\exeserv.exe
+       FinalizeBuildStatus:
+         Usuwanie pliku „Debug\exeserv.unsuccessfulbuild”.
+         Modyfikowanie „Debug\exeserv.lastbuildstate”.
+     1>Kompilowanie projektu „C:\Users\pppp\Desktop\KSR_LAB1\exeserv\exeserv.vcxproj” wykonane (elementy docelowe: rebuild).
+
+Kompilacja powiodła się.
+
+Czas, który upłynął: 00:00:08.41

@@ -1,0 +1,65 @@
+﻿Kompilacja rozpoczęła się 2016-03-10 17:19:07.
+     1>Projekt „C:\Users\pppp\Desktop\com_2\com_2.vcxproj” w węźle 2 (elementy docelowe: rebuild).
+     1>_PrepareForClean:
+         Usuwanie pliku „Debug\com_2.lastbuildstate”.
+       InitializeBuildStatus:
+         Trwa tworzenie „Debug\com_2.unsuccessfulbuild”, ponieważ określono "AlwaysCreate".
+       Midl:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\midl.exe /W1 /nologo /char signed /env win32 /h "klasa_h.h" /tlb "Debug\com_2.tlb" ..\KSR_LAB1\comm\klasa.idl 
+         Processing ..\KSR_LAB1\comm\klasa.idl
+         klasa.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\oaidl.idl
+         oaidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\objidl.idl
+         objidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\unknwn.idl
+         unknwn.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wtypes.idl
+         wtypes.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\basetsd.h
+         basetsd.h
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\guiddef.h
+         guiddef.h
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\oaidl.acf
+         oaidl.acf
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D REGISTER_PROXY_DLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\KSR_LAB1\comm\guids.cpp  
+         /D "PROXY_CLSID_IS = { 0x75e9b03e, 0x4a45, 0x459f, { 0x85, 0x72, 0x9, 0x8f, 0x4b, 0x60, 0xd7, 0x4 } };"
+          
+         guids.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D REGISTER_PROXY_DLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt dlldata.c klasa_i.c klasa_p.c  
+         /D "PROXY_CLSID_IS = { 0x75e9b03e, 0x4a45, 0x459f, { 0x85, 0x72, 0x9, 0x8f, 0x4b, 0x60, 0xd7, 0x4 } };"
+          
+         klasa_p.c
+         klasa_i.c
+         dlldata.c
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\com_2.dll.embed.manifest.res" Debug\com_2_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.dll" /INCREMENTAL /NOLOGO rpcns4.lib rpcrt4.lib uuid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"C:\Users\pppp\Desktop\KSR_LAB1\comm\proxy.def" /MANIFEST /ManifestFile:"Debug\com_2.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.lib" /MACHINE:X86 /DLL Debug\com_2.dll.embed.manifest.res
+         Debug\guids.obj
+         Debug\dlldata.obj
+         Debug\klasa_i.obj
+         Debug\klasa_p.obj
+            Creating library C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.lib and object C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.exp
+       Manifest:
+         Usuwanie pliku „Debug\com_2.dll.embed.manifest”.
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\com_2.dll.embed.manifest" /manifest Debug\com_2.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\com_2.dll.embed.manifest.res" Debug\com_2_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.dll" /INCREMENTAL /NOLOGO rpcns4.lib rpcrt4.lib uuid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"C:\Users\pppp\Desktop\KSR_LAB1\comm\proxy.def" /MANIFEST /ManifestFile:"Debug\com_2.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.lib" /MACHINE:X86 /DLL Debug\com_2.dll.embed.manifest.res
+         Debug\guids.obj
+         Debug\dlldata.obj
+         Debug\klasa_i.obj
+         Debug\klasa_p.obj
+            Creating library C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.lib and object C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.exp
+         com_2.vcxproj -> C:\Users\pppp\Desktop\KSR_LAB1\Debug\com_2.dll
+       FinalizeBuildStatus:
+         Usuwanie pliku „Debug\com_2.unsuccessfulbuild”.
+         Modyfikowanie „Debug\com_2.lastbuildstate”.
+     1>Kompilowanie projektu „C:\Users\pppp\Desktop\com_2\com_2.vcxproj” wykonane (elementy docelowe: rebuild).
+
+Kompilacja powiodła się.
+
+Czas, który upłynął: 00:00:07.42
